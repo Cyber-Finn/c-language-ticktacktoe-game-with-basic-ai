@@ -72,7 +72,7 @@ void printBoard(int l_board[]) {
 // Function to check if the game is a draw
 // board should be a 3x3 grid
 int drawCheck(int l_board[]) {
-    for (int i = 0; i < 9; ++i) { //9 represents an empty space, and the Xs and Os rep player moves
+    for (int i = 0; i < 9; ++i) { //9 is the max number of moves we can make on a 3x3 board
         if (l_board[i] != 'X' && l_board[i] != 'O') {
             // If any position is not filled, the game is not a draw
             return 0;
